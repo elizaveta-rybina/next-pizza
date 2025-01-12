@@ -1,3 +1,4 @@
+import { Header } from '@/components/shared/header'
 import type { Metadata } from 'next'
 import { Nunito } from 'next/font/google'
 import './globals.css'
@@ -20,7 +21,12 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={`${nunito.variable}  antialiased`}>{children}</body>
+			<body className={`${nunito.variable}  antialiased`}>
+				<main className='min-h-screen'>
+					<Header />
+					{children}
+				</main>
+			</body>
 		</html>
 	)
 }
