@@ -30,6 +30,7 @@ export const Categories: React.FC<Props> = ({ className }) => {
 							'bg-white shadow-md shadow-gray-200 text-primary'
 					)}
 					key={index}
+					
 				>
 					<button>{category}</button>
 				</a>
