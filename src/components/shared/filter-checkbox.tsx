@@ -23,7 +23,7 @@ export const FilterCheckbox: React.FC<FilterCheckboxProps> = ({
 				checked={checked}
 				value={value}
 				className='rounded-[8px] w-6 h-6'
-				id={`checkbox-${String(value)}`}
+				id={`checkbox-${String(value)}`} // чтобы можно было и на текст тыкать
 			/>
 			<label
 				htmlFor={`checkbox-${String(value)}`}
